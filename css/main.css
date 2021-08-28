@@ -5,6 +5,33 @@
     margin: 0 auto;
 }
 
+.backtotop{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+
+.backtotop button{
+    background-color: var(--azul-escuro);
+    padding: 1rem;
+    color: #FFF;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-radius: 0.5rem;
+
+    cursor: pointer;
+}
+
+.backtotop button svg{
+    width: 3rem;
+    height: 3rem;
+}
+
 .header{
     width: 100%;
     position: absolute;
@@ -146,7 +173,7 @@
     border: 1px solid #fff;
     box-shadow: 0px 0px 10px #ccc;
 
-    margin-top: 2.5rem;
+    margin-top: 5rem;
     margin-bottom: 2.5rem;
 
     padding: 4rem 5rem;
@@ -163,10 +190,199 @@
 }
 
 .skills .content .skills-nivel .box-skills {
-    width: 33%;
+    width: 30%;
+    
     text-align: center;
 }
 
 .skills .content .skills-nivel .box-skills .svg svg {
     width: 100px;
+    min-height: 150px;
+}
+
+.skills .content .skills-nivel .box-skills .barra-progresso {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 15px;
+    margin-top: 1rem;
+}
+.skills .content .skills-nivel .box-skills .barra{
+    position: absolute;
+    height: 100%;
+    background-color: var(--azul-escuro);
+    border-radius: 15px;
+    transition: 0.3s linear;
+}
+
+.skills .content .skills-nivel .box-skills #barra-html {
+    width: 91%;
+}
+
+.skills .content .skills-nivel .box-skills #barra-css {
+    width: 94%;
+}
+.skills .content .skills-nivel .box-skills #barra-js {
+    width: 79%;
+}
+.skills .content .skills-nivel .box-skills #barra-react {
+    width: 57%;
+}
+.skills .content .skills-nivel .box-skills #barra-git {
+    width: 77%;
+}
+
+.skills .content .skills-nivel .box-skills #barra-github {
+    width: 87%;
+}
+  
+.skills .content .skills-nivel .box-skills .label-barra {
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    font-size: 1.6rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* trajetoria */
+
+.trajetoria{
+    width: 100%;
+}
+
+.trajetoria .content{
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 10px #ccc;
+
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+
+    padding: 4rem 5rem;
+
+}
+
+.trajetoria .content .container-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.trajetoria .content .container-box .linha-centro{
+    height: 100vh;
+    width: 5px;
+    position: relative;
+}
+
+.trajetoria .content .container-box .linha-centro::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--azul-escuro);
+}
+
+.trajetoria .content .container-box .left-panel{
+    width: 45%;
+}
+
+
+.trajetoria .content .container-box .right-panel{
+    width: 45%;
+}
+
+
+
+.trajetoria .content .container-box .box-vazio{
+    height: 150px;
+}
+
+.trajetoria .content .container-box .box-etapa{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 0 10px #ccc;
+
+    width: 100%;
+    height: 150px;
+
+    position: relative;
+}
+
+.trajetoria .content .container-box .box-left::before{
+    content: "";
+    position: absolute;
+    right: -5rem;
+    top: 50%;
+    width: 5rem;
+    height: 0.5rem;
+    background-color: var(--azul-escuro);
+}
+
+.trajetoria .content .container-box .box-right::before{
+    content: "";
+    position: absolute;
+    left: -5rem;
+    top: 50%;
+    width: 5rem;
+    height: 0.5rem;
+    background-color: var(--azul-escuro);
+}
+
+
+
+.trajetoria .content .container-box .box-left::after{
+    content: "";
+    position: absolute;
+    right: -6rem;
+    top: 45%;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: var(--verde);
+    z-index: 2;
+}
+
+.trajetoria .content .container-box .box-right::after{
+    content: "";
+    position: absolute;
+    left: -6rem;
+    top: 45%;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: var(--verde);
+}
+
+
+
+
+.trajetoria .content .container-box .box-etapa .data{
+    height: 100%;
+    width: 30%;
+    background-color: #eee;
+    box-shadow: 0 0 10px #ccc;
+    border: 1px solid var(--azul-escuro);
+    text-align: center;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.trajetoria .content .container-box .box-etapa .data .data-ano{
+    font-size: 1.6rem;
+}
+
+.trajetoria .content .container-box .box-etapa .text{
+    width: 60%;
 }
