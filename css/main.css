@@ -231,6 +231,12 @@
 .skills .content .skills-nivel .box-skills #barra-react {
     width: 57%;
 }
+.skills .content .skills-nivel .box-skills #barra-sass {
+    width: 60%;
+}
+.skills .content .skills-nivel .box-skills #barra-bootstrap {
+    width: 42%;
+}
 .skills .content .skills-nivel .box-skills #barra-git {
     width: 77%;
 }
@@ -239,6 +245,9 @@
     width: 87%;
 }
   
+.skills .content .skills-nivel .box-skills #barra-cpanel {
+    width: 90%;
+}
 .skills .content .skills-nivel .box-skills .label-barra {
     text-align: center;
     line-height: 30px;
